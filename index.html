@@ -21,6 +21,7 @@
             width: 70%;
             height: 60%;
             text-align: center;
+            position: relative;
         }
 
         h2, p, h1 {
@@ -28,16 +29,20 @@
         }
 
         #rounded-square {
-            width: 300px;
-            height: 300px;
+            width: 150px; /* Adjust size as needed */
+            height: 150px; /* Adjust size as needed */
             background-color: white;
-            display: flex;
-            flex-wrap: wrap;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
         }
 
-        .section {
+        .progress-section {
             width: 50%;
-            height: 50%;
+            height: 100%;
+            display: inline-block;
         }
 
         .green {
@@ -57,13 +62,13 @@
     <div id="white-box">
         <h1>Welcome on STEAM UNICEF page.</h1>
         <p>This webpage was created by NASAD students. We are wanting to help out with the environment. You can see our hydrotower progress below this.</p>
-    </div>
 
-    <div id="rounded-square">
-        <div class="section green"></div>
-        <div class="section yellow"></div>
-        <div class="section white"></div>
-        <div class="section white"></div>
+        <div id="rounded-square">
+            <div class="progress-section green"></div>
+            <div class="progress-section yellow"></div>
+            <div class="progress-section white"></div>
+            <div class="progress-section white"></div>
+        </div>
     </div>
 </body>
 </html>
